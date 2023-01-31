@@ -1,0 +1,6 @@
+streamlit-lottie
+matplotlib
+pandas
+numpy
+statsmodels
+causalimpact
