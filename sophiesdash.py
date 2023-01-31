@@ -125,6 +125,14 @@ def causal_impact_widget(impact):
     # Visualization
     return impact.plot()
 
+def causaul_impact_summary(impact):
+    df, pre_period, post_period = generate_time_series(impact=impact, **ts_params)
+    # Causal Impact Model
+    impact = CausalImpact(data=df, pre_period=pre_period, post_period=post_period)
+    # Visualization
+    return impact.summary()
+    
+
 
 st.set_option('deprecation.showPyplotGlobalUse', False)
 def load_lottieurl(url):
@@ -157,7 +165,7 @@ with st.container():
                 impact = values
                 
                 st.pyplot(causal_impact_widget(impact))
-                st.write(impact.summary())
+                st.write(causaul_impact_summary(impact))
                 
                 
                 
