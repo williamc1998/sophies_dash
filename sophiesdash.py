@@ -135,7 +135,8 @@ def load_lottieurl(url):
 lottie_coding = load_lottieurl('https://assets5.lottiefiles.com/private_files/lf30_jyndijva.json')
 
 with st.container():
-    image = Image.open('/Users/william/Downloads/Agilisys-Logo-Black-RGB.png')
+    urllib.request.urlretrieve('https://upload.wikimedia.org/wikipedia/commons/9/9d/Agilisys-Logo-Black-RGB.png', 'logo')
+    image = Image.open('logo')
     st.image(image)
     st.write("---")
     left_column, right_column = st.columns(2)
