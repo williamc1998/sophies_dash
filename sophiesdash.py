@@ -166,8 +166,3 @@ with st.container():
                 
                 st.pyplot(causal_impact_widget(impact))
                 st.write(causaul_impact_summary(impact))
-                
-                
-                
-    
-                
