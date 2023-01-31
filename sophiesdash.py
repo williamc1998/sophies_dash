@@ -13,8 +13,6 @@ import altair as alt
 import pandas as pd
 import numpy as np
 from matplotlib import pyplot as plt
-import ipywidgets as widgets
-from ipywidgets import interact
 from PIL import Image
 
 # Create synthetic time-series data
