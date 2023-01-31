@@ -1,4 +1,3 @@
-# Data processing
 import pandas as pd
 import numpy as np
 from datetime import datetime
@@ -10,8 +9,6 @@ from streamlit_lottie import st_lottie
 import json
 import ssl,os,urllib
 import altair as alt
-import pandas as pd
-import numpy as np
 from matplotlib import pyplot as plt
 from PIL import Image
 
